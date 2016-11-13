@@ -113,23 +113,6 @@ static NSString * const reuseIdentifier = @"simpleLibraryPickerViewCell";
 
     });
     
-//    NSMutableArray<NSIndexPath *> *mutableVisibleIndexPaths = [NSMutableArray<NSIndexPath *> array];
-//    [visibleIndexPaths enumerateObjectsUsingBlock:^(NSIndexPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        if( obj.row < _assets.count ){
-//            [mutableVisibleIndexPaths addObject:obj];
-//        }
-//    }];
-    
-
-//    NSIndexSet *indexSetRemovedIndexes = changeDetails.removedIndexes;
-//    changeDetails.removedObjects;
-    
-//    NSIndexSet *indexSetInsertedIndexes = changeDetails.insertedIndexes;
-//    changeDetails.insertedObjects;
-    
-//    NSIndexSet *indexSetChangedIndexes = changeDetails.changedIndexes;
-//    changeDetails.changedObjects;
-
 }
 
 - (void) onCancel:(id)sender
@@ -259,36 +242,5 @@ static NSString * const reuseIdentifier = @"simpleLibraryPickerViewCell";
     }
     
 }
-
-#pragma mark <UICollectionViewDelegate>
-
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end
