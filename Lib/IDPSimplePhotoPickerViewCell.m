@@ -39,6 +39,7 @@
 
 - (void) setSelected:(BOOL)selected
 {
+    [super setSelected:selected];
     if( selected == YES ){
         [_delegate selectedSimpleLibraryPickerViewCellDidSelect:self];
     }
