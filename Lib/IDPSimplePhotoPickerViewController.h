@@ -17,6 +17,7 @@
 + (IDPSimplePhotoPickerViewController *)simplePhotoPickerViewController;
 
 @property (weak,nonatomic) id<IDPSimplePhotoPickerViewControllerDelegate> delegate;
+@property (weak,nonatomic) id<UIScrollViewDelegate> scrollViewDelegate;
 
 @end
 

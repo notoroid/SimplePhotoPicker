@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SimplePhotoPicker"
-  s.version      = "0.1"
+  s.version      = "0.1.1"
   s.summary      = "SimplePhotoPicker is a simple photo picker UI. You can combine with UINavigationController to realize photo selection function or provide photo selection function by incorporating as part of UI."
 
   s.description  = <<-DESC

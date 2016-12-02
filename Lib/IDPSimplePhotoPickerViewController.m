@@ -14,6 +14,8 @@
 {
     PHFetchResult *_assets;
     NSCache *_cache;
+    
+    BOOL _skipDelegate;
 }
 @property(readonly,nonatomic) NSCache *cache;
 @end
@@ -241,6 +243,18 @@ static NSString * const reuseIdentifier = @"simpleLibraryPickerViewCell";
         }];
     }
     
+}
+
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+{
+    [_scrollViewDelegate scrollViewWillEndDragging:scrollView withVelocity:velocity targetContentOffset:targetContentOffset];
+}
+
+- (void) scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if( _skipDelegate != YES ){
+        [_scrollViewDelegate scrollViewDidScroll:scrollView];
+    }
 }
 
 @end
